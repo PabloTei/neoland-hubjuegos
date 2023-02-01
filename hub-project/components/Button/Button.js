@@ -11,6 +11,7 @@ export const changeColor = () => {
     button.addEventListener("click", (event) => {
         let newColor = colorRGB();
         document.body.style.backgroundColor = newColor;
+        
     })
 }
 

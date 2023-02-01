@@ -4,7 +4,7 @@ import { initContent } from "../../main";
 export const Hub = () => {
     const main = document.querySelector("main");
     main.innerHTML = `
-    <h1>Hola ${localStorage.getItem("user")}</h1>
+    <h1>Bienvenido ${localStorage.getItem("user")}</h1>
     <button class="button-logout">Logout</button>
     `
     logout();
