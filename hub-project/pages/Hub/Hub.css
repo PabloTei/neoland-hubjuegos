@@ -1,0 +1,9 @@
+.hub {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: inherit;
+    gap: 1rem;
+}
