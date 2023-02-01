@@ -6,6 +6,7 @@
     text-align: center;
     background-color: inherit;
     gap: 1rem;
+    padding: 0 8rem;
 }
 
 .input-login {
@@ -20,4 +21,9 @@
     align-content: center;
     height: 40px;
     font-size: 16px;
+}
+
+.input-login {
+    text-align: center; 
+    font-size: 18px;
 }

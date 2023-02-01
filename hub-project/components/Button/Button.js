@@ -2,7 +2,7 @@ import "./Button.css";
 
 export const buttonColorMode = () => `
 <button class="my-btn">
-<img src="../../public/icons/arcoiris.png" alt ="boton-arcoiris"
+<img src="../../public/icons/arco-iris.png" alt ="boton-arcoiris"
 </button>
 `
 
