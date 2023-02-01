@@ -8,12 +8,22 @@
     gap: 1rem;
 }
 
+.games {
+    height: 90vh;
+    display: grid;
+}
+
 .game-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+
 }
 
 .game-container > div {
-   border: 1px solid red
+   border: 1px solid black;
+   text-align: center;
+   margin: 1rem;
+   
 }
+
