@@ -31,7 +31,6 @@
    justify-content: center;
    align-items: center;
    height: 100px;
-   transition: all 1s ease-in-out;
    
 }
 
@@ -69,4 +68,5 @@
 
 .game-container > div:hover{
     font-size: 30px;
+    transition: all 1s ease-in-out;
 }
