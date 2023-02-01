@@ -7,8 +7,10 @@ export const Hub = () => {
     const main = document.querySelector("main");
     main.innerHTML = `
     <section class="games">
-    <h1>Bienvenido ${localStorage.getItem("user")}</h1>
-    <p>Escoge un juego</p>
+    <div class="text1">
+    <h1>¡BIENVENIDO ${localStorage.getItem("user").toUpperCase()}!</h1>
+    <p>ESCOGE UN JUEGO</p>
+    </div>
     <div class="game-container"></div>
     <button class="button-logout">Logout</button>
     </section>

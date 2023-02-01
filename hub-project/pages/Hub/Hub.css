@@ -27,14 +27,14 @@
    
 }
 
-.games > h1 {
+.text1 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
+    font-size: 40px;
+
 }
 
-.games > p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
