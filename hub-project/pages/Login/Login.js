@@ -6,8 +6,8 @@ export const Login = () => {
     <section class="login">
     <h1>NEOLAND</h1>
     <h1>HUB-GAMES</h1>
-    <input>
-    <button></button>
+    <input class="input-login">
+    <button class="button-login">Login</button>
     </section>
     `
 }

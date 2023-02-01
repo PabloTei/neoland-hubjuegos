@@ -7,8 +7,16 @@
     list-style-type: none;
     color: inherit;
     background-color: whitesmoke;
+    background-color: inherit;
 }
 
 body {
     min-height: 100vh;
 }
+
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
