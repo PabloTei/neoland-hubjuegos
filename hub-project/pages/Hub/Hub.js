@@ -31,7 +31,7 @@ const hubGames = () => {
         const container = document.querySelector(".game-container");
         for (const game of games) {
             const div = document.createElement("div");
-            div.innerHTML = ProjectGame(game);
+            div.innerHTML = ProjectGame(game).toUpperCase();
             container.appendChild(div);
         }
 }
