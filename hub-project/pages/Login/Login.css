@@ -7,7 +7,8 @@
     background-color: inherit;
     gap: 1rem;
     padding: 0 8rem;
-    color:grey
+    color:grey;
+    align-items: center;
 }
 
 .input-login {
@@ -17,8 +18,11 @@
     text-align: center; 
     font-size: 18px;
     border: 2px solid grey;
-    width: 60%;
-
+    width: 80%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    
 }
 
 .button-login {
@@ -29,6 +33,7 @@
     border-radius: 0.3rem;
     border: 2px solid grey;
     width: 20%;
-   
+    display: flex;
+    align-items: center; 
 }
 
