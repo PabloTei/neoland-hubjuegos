@@ -6,9 +6,11 @@ export const Login = () => {
     const main = document.querySelector("main");
     main.innerHTML = `
     <section class="login">
+    <div class="text">
     <h1>NEOLAND</h1>
     <h1>HUB-GAMES</h1>
-    <input type="text" class="input-login">
+    </div>
+    <input type="text" class="input-login" placeholder="Introduce tu nombre">
     <button type="submit" class="button-login">Login</button>
     </section>
     `
