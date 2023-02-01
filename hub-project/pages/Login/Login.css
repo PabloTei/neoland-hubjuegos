@@ -7,12 +7,17 @@
     background-color: inherit;
     gap: 1rem;
     padding: 0 8rem;
+    color:grey
 }
 
 .input-login {
     justify-content: center;
     align-content: center;
     height: 30px;
+    text-align: center; 
+    font-size: 18px;
+    border: 2px solid grey;
+    width: 60%;
 
 }
 
@@ -21,9 +26,9 @@
     align-content: center;
     height: 40px;
     font-size: 16px;
+    border-radius: 0.3rem;
+    border: 2px solid grey;
+    width: 20%;
+   
 }
 
-.input-login {
-    text-align: center; 
-    font-size: 18px;
-}
