@@ -8,10 +8,8 @@ export const Login = () => {
     <section class="login">
     <h1>NEOLAND</h1>
     <h1>HUB-GAMES</h1>
-    <form>
-    <input type="text" class="input-login" name ="username" required>
+    <input type="text" class="input-login">
     <button type="submit" class="button-login">Login</button>
-    </form>
     </section>
     `
     userRegister();
@@ -24,7 +22,7 @@ const userRegister = () => {
         if (inputLogin.value != "") {
             initContent("Hub")
         } else {
-            
+            alert("Porfavor, introduce un nombre")
         }
         
     })
