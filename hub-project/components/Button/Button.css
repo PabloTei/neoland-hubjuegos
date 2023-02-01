@@ -1,2 +1,12 @@
+.my-btn {
+    background: none;
+    border: none;
+}
 
+.my-btn > img{
+    display: flex;
+   width: 3rem;
+   height: 3rem;
+   
+}
 
