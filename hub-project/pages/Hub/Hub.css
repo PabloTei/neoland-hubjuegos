@@ -27,3 +27,14 @@
    
 }
 
+.games > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.games > p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
