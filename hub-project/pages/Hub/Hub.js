@@ -12,7 +12,9 @@ export const Hub = () => {
     <p>ESCOGE UN JUEGO</p>
     </div>
     <div class="game-container"></div>
+    <div class="button-log">
     <button class="button-logout">Logout</button>
+    </div>
     </section>
     `
     logout();

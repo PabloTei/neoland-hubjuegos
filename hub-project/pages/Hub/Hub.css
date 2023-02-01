@@ -44,8 +44,14 @@
     
 }
 
-.button-logout {
+.button-log {
     display: flex;
+}
+.button-logout {
+    display: flex; 
     justify-content: center;
-    
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
 }
