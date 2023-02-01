@@ -1,6 +1,5 @@
 import "./Hub.css";
 import { initContent } from "../../main";
-import { Login } from "../Login/Login";
 
 export const Hub = () => {
     const main = document.querySelector("main");
