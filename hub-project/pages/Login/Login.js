@@ -10,4 +10,14 @@ export const Login = () => {
     <button class="button-login">Login</button>
     </section>
     `
+    userRegister();
 }
+
+const userRegister = () => {
+    const inputLogin = document.querySelector(".input-login");
+    document.querySelector(".button-login").addEventListener("click", (ev) => {
+        localStorage.setItem("user", inputLogin.value);
+    })
+}
+
+
