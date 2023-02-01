@@ -46,12 +46,27 @@
 
 .button-log {
     display: flex;
+    justify-content: center;
+   
 }
 .button-logout {
     display: flex; 
     justify-content: center;
     align-items: center;
     width: 100%;
-    font-weight: bold;
     font-size: 16px;
+    width: 10%;
+    height: 30%;
+    box-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
+}
+
+.button-logout:hover {
+    border: 4px solid rgb(0, 0, 0);
+    transition: all 1s ease-in-out;
+    font-weight: bold;
+}
+
+.game-container > div {
+
+
 }
