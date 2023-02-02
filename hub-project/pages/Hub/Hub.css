@@ -52,9 +52,8 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    width: 100%;
     font-size: 16px;
-    width: 6%;
+    min-width: 10%;
     height: 30%;
     box-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
     border-radius: 0.3rem;
