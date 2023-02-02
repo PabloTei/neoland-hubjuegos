@@ -7,8 +7,12 @@ export const Footer = () => {
     <div class="button-log">
     <button class="button-logout">Logout</button>
     </div>
+    <div class="button-log">
+    <button class="anterior-page"><-</button>
+    </div>
     `
     logout();
+    anteriorPage();
 }
 
 const logout = () => {
@@ -16,5 +20,12 @@ const logout = () => {
     inputLogout.addEventListener("click", (ev) => {
         localStorage.removeItem("user");
         initContent("Login");
+    })
+}
+
+const anteriorPage = () => {
+    const myBtnAntPage = document.querySelector (".anterior-page");
+    myBtnAntPage.addEventListener("click", () => {
+        initContent("Hub");
     })
 }
