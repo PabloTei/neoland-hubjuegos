@@ -1,5 +1,5 @@
 import "./PokeApi.css";
-//import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
+import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 
 const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/"
 
@@ -15,7 +15,7 @@ const myPokemons = async () => {
 }
 
 
-export const PokeApi = () => {
+export const PokeApi = async () => {
     const main = document.querySelector("main");
     main.innerHTML = 
     `
@@ -23,7 +23,7 @@ export const PokeApi = () => {
     </div>
     
     `
-    myPokemons();
+    await myPokemons();
     cardPokemon();
 }
 
@@ -32,8 +32,8 @@ const cardPokemon = () => {
     for (const pokemon of allPokemons) {
         const div = document.createElement("div");
         div.innerHTML = ProjectCard(pokemon);
+        console.log(ProjectCard(pokemon))
         container.appendChild(div);
     }
 }
 
-xvxvxvxvxcvxv
