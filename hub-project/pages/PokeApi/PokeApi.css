@@ -1,5 +1,21 @@
-.main {
-    height: 90vh;
-
+.card-container {
+    
+    display: grid;
+    grid-template-columns: repeat(5, 15rem);
+    grid-template-rows: repeat(30, 15rem);
+    justify-content: center;
+    align-items: center;
 }
 
+.card-container > div {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container > div > img {
+    height: 10rem;
+    width: 10rem;
+}
