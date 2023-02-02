@@ -15,7 +15,7 @@ const myPokemons = async () => {
 }
 
 
-export const PokeApi =  () => {
+export const PokeApi = async () => {
     const main = document.querySelector("main");
     main.innerHTML = 
     `
@@ -23,7 +23,7 @@ export const PokeApi =  () => {
     </div>
     
     `
-     myPokemons();
+    await myPokemons();
     cardPokemon();
 }
 
