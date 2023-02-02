@@ -2,13 +2,14 @@
     min-height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:center;
     text-align: center;
     background-color: inherit;
     gap: 1rem;
     padding: 0 8rem;
     color:rgb(0, 0, 0);
     align-items: center;
+    
 }
 
 .input-login {
