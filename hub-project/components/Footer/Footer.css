@@ -1,12 +1,11 @@
 footer {
-    min-height: 40vh;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     position: relative;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
    
-    
 }
 
 .anterior-page {
@@ -21,6 +20,7 @@ footer {
     border-radius: 0.3rem;
     border-color: black;
     padding: 0.7rem;
+    margin-top: 2rem;
     
 }
 

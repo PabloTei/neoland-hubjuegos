@@ -24,8 +24,8 @@ export const initContent = (route) => {
 
 const header = document.querySelector("header");
 header.innerHTML = Header();
-Footer();
 
+Footer();
 changeColor();
 initContent("Login")
 
