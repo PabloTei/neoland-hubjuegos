@@ -75,12 +75,6 @@
     transition: all 1s ease-in-out;
 }
 
-@media screen and (max-width: 720px) {
-    .text1 {
-        font-size: 20px;
-    }
-
-}
 
 @media screen and (max-width: 950px) {
     .game-container {
@@ -90,6 +84,9 @@
     .game-container > div:hover{
         font-size: 20px;
         transition: all 1s ease-in-out;
+    }
+    .text1 {
+        font-size: 20px;
     }
    
 }
