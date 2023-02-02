@@ -1,3 +1,30 @@
 footer {
-    height: 10vw;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid black;
+   
+    
+}
+
+.anterior-page {
+    display: flex; 
+    justify-content: center;
+    align-items:center;
+    width: 20vw;
+    font-size: 16px;
+    min-width: 5px;
+    height: 30%;
+    box-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
+    border-radius: 0.3rem;
+    border-color: black;
+    padding: 0.7rem;
+    
+}
+
+.anterior-page:hover {
+    border-bottom:4px solid rgb(0, 0, 0);
+    transition: all 0.5s ease-in-out;
 }

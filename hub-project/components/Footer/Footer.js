@@ -5,10 +5,8 @@ export const Footer = () => {
     const myFooter = document.querySelector("footer");
     myFooter.innerHTML = `
     <div class="button-log">
-    <button class="button-logout">Logout</button>
-    </div>
-    <div class="button-log">
     <button class="anterior-page"><-</button>
+    <button class="button-logout">Logout</button>
     </div>
     `
     logout();
