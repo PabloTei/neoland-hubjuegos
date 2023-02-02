@@ -15,6 +15,8 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    
+    
 }
 
 .card-container > div > img {
@@ -33,4 +35,23 @@
     scale: 1.2;
 }
 
+@media screen and (max-width: 1200px) {
+    .card-container {
+    grid-template-columns: repeat(3, 15rem);
+    grid-template-rows: repeat(50, 15rem);
+    }
+}
 
+@media screen and (max-width: 750px) {
+    .card-container {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(75, 15rem);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card-container {
+    grid-template-columns: repeat(1, 15rem);
+    grid-template-rows: repeat(150, 15rem);
+    }
+}
