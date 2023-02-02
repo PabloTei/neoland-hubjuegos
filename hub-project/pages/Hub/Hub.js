@@ -8,13 +8,13 @@ export const Hub = () => {
     main.innerHTML = `
     <section class="games">
     <div class="text1">
+    <div class="button-log">
+    <button class="button-logout">Logout</button>
+    </div>
     <h1>¡BIENVENIDX ${localStorage.getItem("user").toUpperCase()}!</h1>
     <p>ESCOGE UN JUEGO</p>
     </div>
     <div class="game-container"></div>
-    <div class="button-log">
-    <button class="button-logout">Logout</button>
-    </div>
     </section>
     `
     logout();
