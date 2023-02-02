@@ -3,6 +3,7 @@ import { Header } from './components/Header/Header';
 import { changeColor } from './components/Button/Button';
 import { Login } from './pages/Login/Login';
 import { Hub } from './pages/Hub/Hub';
+import { PokeApi } from './pages/PokeApi/PokeApi';
 
 
 export const initContent = (route) => {
@@ -12,6 +13,9 @@ export const initContent = (route) => {
             break;
         case "Hub":
             Hub();
+            break;
+        case "PokeApi":
+            PokeApi();
             break;
     }
 }

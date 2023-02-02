@@ -1,5 +1,6 @@
 import "./ProjectGame.css";
 
+
 export const ProjectGame = (game) => `
-    <a href="#"><h2 class="${game}-name">${game}</h2></a>
+    <a href="#" class="${game}-name"><h2>${game}</h2></a>
 `

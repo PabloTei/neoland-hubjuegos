@@ -19,6 +19,7 @@ export const Hub = () => {
     `
     logout();
     hubGames();
+    route();
 }
 
 const logout = () => {
@@ -36,4 +37,11 @@ const hubGames = () => {
             div.innerHTML = ProjectGame(game).toUpperCase();
             container.appendChild(div);
         }
+}
+
+const route = () => {
+    const routePokeApi = document.querySelector(".POKEAPI-NAME");
+    routePokeApi.addEventListener("click", (ev) => {
+       initContent("PokeApi");
+    })
 }
