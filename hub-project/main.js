@@ -4,6 +4,7 @@ import { changeColor } from './components/Button/Button';
 import { Login } from './pages/Login/Login';
 import { Hub } from './pages/Hub/Hub';
 import { PokeApi } from './pages/PokeApi/PokeApi';
+import { Footer } from './components/Footer/Footer';
 
 
 export const initContent = (route) => {
@@ -23,6 +24,8 @@ export const initContent = (route) => {
 
 const header = document.querySelector("header");
 header.innerHTML = Header();
+Footer();
+
 changeColor();
 initContent("Login")
 
