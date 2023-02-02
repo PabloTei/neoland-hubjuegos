@@ -37,3 +37,4 @@ const cardPokemon = () => {
     }
 }
 
+aaa
