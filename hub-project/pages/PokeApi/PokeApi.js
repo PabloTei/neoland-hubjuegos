@@ -32,7 +32,6 @@ const cardPokemon = () => {
     for (const pokemon of allPokemons) {
         const div = document.createElement("div");
         div.innerHTML = ProjectCard(pokemon);
-        console.log(ProjectCard(pokemon))
         container.appendChild(div);
     }
 }
