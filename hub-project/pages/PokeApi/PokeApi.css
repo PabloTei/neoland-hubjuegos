@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    gap: 1rem
     
 }
 
@@ -21,8 +22,9 @@
     -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
-    
+    margin: 0.7rem;
+
+     
 }
 
 .card-container > div > img {
