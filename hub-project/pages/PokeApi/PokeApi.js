@@ -29,6 +29,7 @@ export const PokeApi = async () => {
 
 const cardPokemon = () => {
     const container = document.querySelector(".card-container");
+    container.innerHTML = "";
     for (const pokemon of allPokemons) {
         const div = document.createElement("div");
         div.innerHTML = ProjectCard(pokemon);

@@ -2,7 +2,7 @@ import "./Button.css";
 
 export const buttonColorMode = () => `
 <button class="my-btn">
-<img src="https://res.cloudinary.com/depifliz3/image/upload/v1675327380/samples/ecommerce/arco-iris_u7m5gd.png" alt ="boton-arcoiris"
+<img src="https://res.cloudinary.com/depifliz3/image/upload/v1675382302/samples/ecommerce/pokeball_q5zuqh.png" alt ="boton-arcoiris"
 </button>
 `
 
