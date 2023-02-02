@@ -1,5 +1,5 @@
 import "./PokeApi.css";
-import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
+//import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
 
 const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/"
 
@@ -36,3 +36,4 @@ const cardPokemon = () => {
     }
 }
 
+xvxvxvxvxcvxv
