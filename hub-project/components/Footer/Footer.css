@@ -4,7 +4,7 @@ footer {
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    border-top: 1px solid black;
+    border-top: 1px dotted rgba(48, 47, 47, 0.632);
    
 }
 
@@ -12,7 +12,7 @@ footer {
     display: flex; 
     justify-content: center;
     align-items:center;
-    width: 20vw;
+    width: 5vw;
     font-size: 16px;
     min-width: 5px;
     height: 30%;

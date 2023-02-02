@@ -47,13 +47,14 @@
 .button-log {
     display: flex;
     justify-content: center;
+    gap:2rem;
    
 }
 .button-logout {
     display: flex; 
     justify-content: center;
     align-items:center;
-    width: 20vw;
+    min-width: 10vw;
     font-size: 16px;
     min-width: 30px;
     height: 30%;
