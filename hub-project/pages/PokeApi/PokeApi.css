@@ -78,6 +78,17 @@
     color: black;
 }
 
+.pulsar-buscar {
+    justify-content: center;
+    display: flex; 
+    border: none;
+}
+
+.pulsar-buscar > img {
+    width: 30px;
+    height: 30px;
+}
+
 @media screen and (max-width: 1200px) {
     .card-container {
     grid-template-columns: repeat(3, 15rem);
