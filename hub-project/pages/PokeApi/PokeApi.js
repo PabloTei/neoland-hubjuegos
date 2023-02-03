@@ -20,6 +20,10 @@ export const PokeApi = async () => {
     const main = document.querySelector("main");
     main.innerHTML = 
     `
+    <div class="botonfiltro">
+    <h2>Buscador Pokemon</h2>
+    <input type="text" class="filtro" placeholder="ej. Charmander">
+    </div>
     <div class="card-container">
     </div>
     
@@ -29,7 +33,6 @@ export const PokeApi = async () => {
 }
 
 const cardPokemon = (allPokemons) => {
-
     const container = document.querySelector(".card-container");
     container.innerHTML = "";
 
@@ -38,6 +41,5 @@ const cardPokemon = (allPokemons) => {
         div.innerHTML = ProjectCard(pokemon);
         container.appendChild(div);
     }
-
 }
 
