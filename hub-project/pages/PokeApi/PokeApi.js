@@ -47,11 +47,15 @@ const cardPokemon = (allPokemons) => {
 
 const filterPokemon = (allPokemons) => {
     const myInput = document.querySelector(".input-filtro");
-    const myButton = document.querySelector(".pulsar-buscar")
+    const myButton = document.querySelector(".pulsar-buscar");
+    const container = document.querySelector(".card-container");
     myButton.addEventListener("click", () => {
+        container.innerHTML = "";
         for (const pokemon of allPokemons) {
             if (pokemon.name.includes((myInput.value).toLowerCase())) {
-                console.log(pokemon.name);
+                const div = document.createElement("div");
+                div.innerHTML = ProjectCard(pokemon);
+                container.appendChild(div);
             }
         }
     })
