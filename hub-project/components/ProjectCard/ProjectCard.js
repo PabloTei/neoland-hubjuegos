@@ -5,5 +5,7 @@ export const ProjectCard = (pokemon) => `
     <h2>${(pokemon.name).toUpperCase()}</h2>
     <p>Altura: ${pokemon.height*10} cm</p>
     <p>Peso: ${pokemon.weight/10} kg</p>
+
 `
 
+//<p>Tipo: ${console.log(pokemon.types)}</p>

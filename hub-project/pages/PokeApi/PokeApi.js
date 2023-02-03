@@ -58,8 +58,15 @@ const filterPokemon = (allPokemons) => {
                 const div = document.createElement("div");
                 div.innerHTML = ProjectCard(pokemon);
                 container.appendChild(div);
+                for (const type of pokemon.types) {
+                    console.log(type.type.name);
+                }
             }
+            /*for (const type of pokemon.types) {
+                console.log(type.type.name);
+            }*/
         }
     })
 }
+
 
