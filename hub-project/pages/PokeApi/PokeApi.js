@@ -7,7 +7,7 @@ const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/"
 
 const myPokemons = async () => {
     let allPokemons = [];
-    for (let i = 1; i < 151; i++) {
+    for (let i = 1; i < 152; i++) {
         const data = await fetch (`${POKEMON_URL}${i}`)
         const info = await data.json();
         allPokemons.push(info);
