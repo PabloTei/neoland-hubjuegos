@@ -23,6 +23,7 @@ export const PokeApi = async () => {
     <div class="botonfiltro">
     <h2>Buscador Pokemon</h2>
     <input type="text" class="input-filtro" placeholder="ej. Charmander">
+    <button class="pulsar-buscar">Buscar</button>
     </div>
     <div class="card-container">
     </div>
@@ -46,9 +47,10 @@ const cardPokemon = (allPokemons) => {
 
 const filterPokemon = (allPokemons) => {
     const myInput = document.querySelector(".input-filtro");
-    myInput.addEventListener("input", () => {
+    const myButton = document.querySelector(".pulsar-buscar")
+    myButton.addEventListener("click", () => {
         for (const pokemon of allPokemons) {
-            if (pokemon.name.includes(myInput.value)) {
+            if (pokemon.name.includes((myInput.value).toLowerCase())) {
                 console.log(pokemon.name);
             }
         }
