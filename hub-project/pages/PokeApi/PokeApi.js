@@ -30,6 +30,7 @@ export const PokeApi = async () => {
     `
     const allPokemons = await myPokemons();
     cardPokemon(allPokemons);
+    filterPokemon(allPokemons);
 }
 
 const cardPokemon = (allPokemons) => {
@@ -41,5 +42,16 @@ const cardPokemon = (allPokemons) => {
         div.innerHTML = ProjectCard(pokemon);
         container.appendChild(div);
     }
+}
+
+const filterPokemon = (allPokemons) => {
+    const myInput = document.querySelector(".input-filtro");
+    myInput.addEventListener("input", () => {
+        for (const pokemon of allPokemons) {
+            if (pokemon.name.includes(myInput.value)) {
+                console.log(pokemon.name);
+            }
+        }
+    })
 }
 
