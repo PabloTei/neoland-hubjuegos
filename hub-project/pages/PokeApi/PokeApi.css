@@ -85,8 +85,16 @@
 }
 
 .pulsar-buscar > img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
+}
+
+.input-filtro:focus::placeholder {
+    color: transparent;
+}
+
+.input-filtro::placeholder {
+    color: black;
 }
 
 @media screen and (max-width: 1200px) {
