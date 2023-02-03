@@ -29,7 +29,7 @@ const hubGames = () => {
 }
 
 const route = () => {
-    const routePokeApi = document.querySelector(".POKEAPI-NAME");
+    const routePokeApi = document.querySelector(".POKEAPI-NAME");       
     routePokeApi.addEventListener("click", (ev) => {
        initContent("PokeApi");
     })

@@ -26,6 +26,6 @@ const anteriorPage = () => {
     const myBtnAntPage = document.querySelector (".anterior-page");
     myBtnAntPage.addEventListener("click", () => {
         initContent("Hub");
-
     })
 }
+
