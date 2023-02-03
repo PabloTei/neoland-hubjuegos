@@ -22,7 +22,7 @@ export const PokeApi = async () => {
     `
     <div class="botonfiltro">
     <h2>Buscador Pokemon</h2>
-    <input type="text" class="filtro" placeholder="ej. Charmander">
+    <input type="text" class="input-filtro" placeholder="ej. Charmander">
     </div>
     <div class="card-container">
     </div>
