@@ -113,6 +113,14 @@
     color: black;
 }
 
+.container-types {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    margin-top: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
     .card-container {
     grid-template-columns: repeat(3, 15rem);

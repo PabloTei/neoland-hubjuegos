@@ -1,5 +1,6 @@
 import "./PokeApi.css";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
+import { tiposPokemon } from "../../data/tipos";
 
 const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/"
 
@@ -26,6 +27,8 @@ export const PokeApi = async () => {
     <input type="text" class="input-filtro" placeholder="ej. Charmander">
     <button class="pulsar-buscar"><img src="https://res.cloudinary.com/depifliz3/image/upload/v1675431895/samples/ecommerce/buscar_a0xppt.png"></button>
     </div>
+    <div class="container-types">
+    </div>
     </div>
     <div class="card-container">
     </div>
@@ -34,6 +37,7 @@ export const PokeApi = async () => {
     const allPokemons = await myPokemons();
     cardPokemon(allPokemons);
     filterPokemon(allPokemons);
+    filterTypePokeom();
 }
 
 const cardPokemon = (allPokemons) => {
@@ -74,3 +78,13 @@ const filterPokemon = (allPokemons) => {
 }
 
 
+const filterTypePokeom = () => {
+    const type = document.querySelector(".container-types");
+    for (const tipoPokemon of tiposPokemon) {
+        const tipos = document.createElement("div");
+        tipos.innerHTML = `
+        <button class="${tipoPokemon}-type">${tipoPokemon}</button>
+        `
+        type.appendChild(tipos);
+    }
+}
