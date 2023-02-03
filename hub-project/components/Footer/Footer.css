@@ -1,10 +1,16 @@
 footer {
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     position: relative;
-    border-top: 1px ridge rgba(48, 47, 47, 0.632);
+    /*border-top: 1px ridge rgba(48, 47, 47, 0.632);*/
+    position:fixed;
+    bottom: 0;
+    object-position: bottom;
+    background-color: transparent;
+    width: 100vw;
+
    
 }
 
@@ -21,6 +27,7 @@ footer {
     border-color: black;
     padding: 0.7rem;
     margin-top: 2rem;
+   background-color: #9c9c9c39;
     
 }
 
