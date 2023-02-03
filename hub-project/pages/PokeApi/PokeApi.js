@@ -44,6 +44,11 @@ const cardPokemon = (allPokemons) => {
         const div = document.createElement("div");
         div.innerHTML = ProjectCard(pokemon);
         container.appendChild(div);
+        for (const type of pokemon.types) {
+            const tipo = document.createElement("div");
+            tipo.innerHTML = `<p>TIPO: ${(type.type.name).toUpperCase()}</p>`
+            div.appendChild(tipo);
+        }
     }
 }
 
@@ -60,13 +65,10 @@ const filterPokemon = (allPokemons) => {
                 container.appendChild(div);
                 for (const type of pokemon.types) {
                     const tipo = document.createElement("div");
-                    tipo.innerHTML = `<p>Tipo: ${type.type.name}</p>`
+                    tipo.innerHTML = `<p>TIPO: ${(type.type.name).toUpperCase()}</p>`
                     div.appendChild(tipo);
                 }
             }
-            /*for (const type of pokemon.types) {
-                console.log(type.type.name);
-            }*/
         }
     })
 }
