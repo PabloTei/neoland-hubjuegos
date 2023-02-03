@@ -87,6 +87,14 @@
 .pulsar-buscar > img {
     width: 25px;
     height: 25px;
+    display: flex;
+}
+
+.input-lupa {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap:1rem;
 }
 
 .input-filtro:focus::placeholder {
