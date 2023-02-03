@@ -64,8 +64,7 @@
     padding: 0.7rem;
     margin-top: 2rem;
     background-color: #9c9c9c39;
-    
-   
+    font-weight: bold
 }
 
 .button-logout:hover {

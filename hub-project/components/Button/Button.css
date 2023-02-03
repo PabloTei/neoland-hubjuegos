@@ -4,12 +4,14 @@
     padding: 1rem;
     margin-right: 2.5rem;
     margin-top: 1rem;
+   
 }
 
 .my-btn > img{
     display: flex;
    width: 2rem;
    height: 2rem;
+ 
    
 }
 
