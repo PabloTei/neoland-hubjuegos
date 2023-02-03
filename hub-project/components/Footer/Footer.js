@@ -1,5 +1,6 @@
 import "./Footer.css";
 import { initContent } from "../../main";
+import { PokeApi } from "../../pages/PokeApi/PokeApi";
 
 export const Footer = () => {
     const myFooter = document.querySelector("footer");
@@ -25,5 +26,6 @@ const anteriorPage = () => {
     const myBtnAntPage = document.querySelector (".anterior-page");
     myBtnAntPage.addEventListener("click", () => {
         initContent("Hub");
+
     })
 }
