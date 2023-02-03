@@ -9,6 +9,7 @@
     gap: 7rem;
     margin-bottom: 4rem;
     
+    
 }
 
 .card-container > div {
@@ -16,18 +17,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding:1rem;
     background: rgba( 0, 0, 0, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 14.5px );
     -webkit-backdrop-filter: blur( 14.5px );
     border-radius: 10px;
     border: 1px solid #FFFCA8;
-    margin: 0.7rem;
+    margin: 0.1rem;
     background-color: transparent;
     -webkit-box-shadow: 14px 0px 44px 11px rgba(0,0,0,0.53);
     -moz-box-shadow: 14px 0px 44px 11px rgba(0,0,0,0.53);
     box-shadow: 14px 0px 44px 11px rgba(0,0,0,0.53);
+    height: 42vh;
 }
 
 .card-container > div > img {
@@ -39,6 +41,7 @@
 .card-container > div > h2 {
     display: flex;
     margin-top: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 .card-container > div:hover {
