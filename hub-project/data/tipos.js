@@ -1,6 +1,5 @@
 export const tiposPokemon = [
     "bug",
-    "dark",
     "dragon",
     "electric",
     "fairy",

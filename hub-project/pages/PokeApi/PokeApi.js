@@ -38,7 +38,9 @@ export const PokeApi = async () => {
     cardPokemon(allPokemons);
     filterPokemon(allPokemons);
     createButton();
-    filterByType(allPokemons);
+    //filterByType(allPokemons);
+    ultimateFunction(allPokemons);
+    
     
     
 }
@@ -92,7 +94,7 @@ const createButton = () => {
     }
 }
 
-const filterByType = (allPokemons) => {
+/*const filterByType = (allPokemons) => {
     const myBtn = document.querySelector(".bug-type");// esto se podrá insertar por parámetro para que me coja cada clase cuando le de a click
     const container = document.querySelector(".card-container");// selecionamos la caja donde vamos a querer pintar los pokemons filtrados y para también borrar lo que hay antes
     myBtn.addEventListener("click", () => { // añadimos escuchador de eventos para que cuando haga click, primero borre el contenido del contenedor y segundo se muestre por pantalla la carta
@@ -110,4 +112,27 @@ const filterByType = (allPokemons) => {
             }
         }
     })
-}                     
+}*/
+
+const ultimateFunction = (allPokemons) => {
+    for (const tipo of tiposPokemon) {
+        const myBtn = document.querySelector(`.${tipo}-type`);
+        const container = document.querySelector(".card-container");
+
+        myBtn.addEventListener("click", () => {
+            container.innerHTML = "";
+            for (const pokemon of allPokemons) {
+                for (const type of pokemon.types) {
+                    if (type.type.name === tipo) {
+                        const tipo3 = document.createElement("div");
+                        tipo3.innerHTML = `
+                        ${ProjectCard(pokemon)}
+                        <p>TIPO: ${(type.type.name).toUpperCase()}</p>
+                        `
+                        container.appendChild(tipo3); 
+                    }
+                }
+            }
+        })
+    }
+}
