@@ -5,6 +5,7 @@ import { Login } from './pages/Login/Login';
 import { Hub } from './pages/Hub/Hub';
 import { PokeApi } from './pages/PokeApi/PokeApi';
 import { Footer } from './components/Footer/Footer';
+import { RollDice } from './pages/RollDice/RollDice';
 
 
 export const initContent = (route) => {
@@ -18,6 +19,8 @@ export const initContent = (route) => {
         case "PokeApi":
             PokeApi();
             break;
+        case "RollDice":
+            RollDice()
     }
 }
 
@@ -27,5 +30,5 @@ header.innerHTML = Header();
 
 Footer();
 changeColor();
-initContent("Login")
+initContent("Login");
 

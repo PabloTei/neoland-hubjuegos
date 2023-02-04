@@ -16,6 +16,7 @@ export const Hub = () => {
     `
     hubGames();
     route();
+    routeRollDice();
 }
 
 
@@ -32,5 +33,12 @@ const route = () => {
     const routePokeApi = document.querySelector(".POKEAPI-NAME");       
     routePokeApi.addEventListener("click", (ev) => {
        initContent("PokeApi");
+    })
+}
+
+const routeRollDice = () => {
+    const routeRollDice = document.querySelector(".ROLLDICE-NAME");
+    routeRollDice.addEventListener("click", () => {
+        initContent("RollDice");
     })
 }
