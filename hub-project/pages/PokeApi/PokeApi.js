@@ -1,6 +1,7 @@
 import "./PokeApi.css";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
-import { tiposPokemon } from "../../data/tipos";
+//import { tiposPokemon } from "../../data/tipos";
+import { tiposPokemonObject } from "../../data/tipos";
 
 const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/"
 
@@ -40,8 +41,6 @@ export const PokeApi = async () => {
     createButton();
     //filterByType(allPokemons);
     ultimateFunction(allPokemons);
-    
-    
     
 }
 
@@ -85,45 +84,27 @@ const filterPokemon = (allPokemons) => {
 
 const createButton = () => {
     const type = document.querySelector(".container-types");
-    for (const tipoPokemon of tiposPokemon) {
+    for (const tipoPokemon of tiposPokemonObject) {
         const tipos = document.createElement("div");
         tipos.innerHTML = `
-        <button class="${tipoPokemon}-type">${tipoPokemon}</button>
+        <button class="${tipoPokemon.name}-type">
+        <img src="${tipoPokemon.img}" alt="type-${tipoPokemon.name}">
+        </button>
         `
         type.appendChild(tipos);
     }
 }
 
-/*const filterByType = (allPokemons) => {
-    const myBtn = document.querySelector(".bug-type");// esto se podrá insertar por parámetro para que me coja cada clase cuando le de a click
-    const container = document.querySelector(".card-container");// selecionamos la caja donde vamos a querer pintar los pokemons filtrados y para también borrar lo que hay antes
-    myBtn.addEventListener("click", () => { // añadimos escuchador de eventos para que cuando haga click, primero borre el contenido del contenedor y segundo se muestre por pantalla la carta
-        container.innerHTML = ""; // vaciamos contenedor
-        for (const pokemon of allPokemons) { // recorremos allpokemons para sacar cada pokemon individualizado
-            for (const type of pokemon.types) { // recorremos cada pokemon individualizado para sacar el tipo
-                if (type.type.name === "bug") { // aplicamos condicional por si contiene la palabra del tipo
-                const tipo = document.createElement("div"); // creamos la carta
-                tipo.innerHTML = `
-                ${ProjectCard(pokemon)}
-                <p>TIPO: ${(type.type.name).toUpperCase()}</p>
-                ` // inyectamos nuestro molde de carta
-                container.appendChild(tipo); // lo añadimos
-                }
-            }
-        }
-    })
-}*/
 
 const ultimateFunction = (allPokemons) => {
-    for (const tipo of tiposPokemon) {
-        const myBtn = document.querySelector(`.${tipo}-type`);
+    for (const tipo of tiposPokemonObject) {
+        const myBtn = document.querySelector(`.${tipo.name}-type`);
         const container = document.querySelector(".card-container");
-
         myBtn.addEventListener("click", () => {
             container.innerHTML = "";
             for (const pokemon of allPokemons) {
                 for (const type of pokemon.types) {
-                    if (type.type.name === tipo) {
+                    if (type.type.name === tipo.name) {
                         const tipo3 = document.createElement("div");
                         tipo3.innerHTML = `
                         ${ProjectCard(pokemon)}
@@ -136,3 +117,4 @@ const ultimateFunction = (allPokemons) => {
         })
     }
 }
+
