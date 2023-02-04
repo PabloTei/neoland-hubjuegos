@@ -96,14 +96,13 @@ const filterByType = (allPokemons) => {
     const myBtn = document.querySelector(".bug-type");// esto se podrá insertar por parámetro para que me coja cada clase cuando le de a click
     const container = document.querySelector(".card-container");// selecionamos la caja donde vamos a querer pintar los pokemons filtrados y para también borrar lo que hay antes
     myBtn.addEventListener("click", () => { // añadimos escuchador de eventos para que cuando haga click, primero borre el contenido del contenedor y segundo se muestre por pantalla la carta
-        container.innerHTML = "";
-        for (const pokemon of allPokemons) {
-            for (const type of pokemon.types) {
-                //console.log(type.type.name)
-                if (type.type.name === "bug") {
-                const tipo = document.createElement("div");
-                tipo.innerHTML = ProjectCard(pokemon);
-                container.appendChild(tipo);
+        container.innerHTML = ""; // vaciamos contenedor
+        for (const pokemon of allPokemons) { // recorremos allpokemons para sacar cada pokemon individualizado
+            for (const type of pokemon.types) { // recorremos cada pokemon individualizado para sacar el tipo
+                if (type.type.name === "bug") { // aplicamos condicional por si contiene la palabra del tipo
+                const tipo = document.createElement("div"); // creamos la carta
+                tipo.innerHTML = ProjectCard(pokemon); // inyectamos nuestro molde de carta
+                container.appendChild(tipo); // lo añadimos
                 }
             }
         }
