@@ -101,7 +101,10 @@ const filterByType = (allPokemons) => {
             for (const type of pokemon.types) { // recorremos cada pokemon individualizado para sacar el tipo
                 if (type.type.name === "bug") { // aplicamos condicional por si contiene la palabra del tipo
                 const tipo = document.createElement("div"); // creamos la carta
-                tipo.innerHTML = ProjectCard(pokemon); // inyectamos nuestro molde de carta
+                tipo.innerHTML = `
+                ${ProjectCard(pokemon)}
+                <p>TIPO: ${(type.type.name).toUpperCase()}</p>
+                ` // inyectamos nuestro molde de carta
                 container.appendChild(tipo); // lo añadimos
                 }
             }
