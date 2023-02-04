@@ -37,7 +37,10 @@ export const PokeApi = async () => {
     const allPokemons = await myPokemons();
     cardPokemon(allPokemons);
     filterPokemon(allPokemons);
-    filterTypePokeom();
+    createButton();
+    filterByType(allPokemons);
+    
+    
 }
 
 const cardPokemon = (allPokemons) => {
@@ -50,7 +53,7 @@ const cardPokemon = (allPokemons) => {
         container.appendChild(div);
         for (const type of pokemon.types) {
             const tipo = document.createElement("div");
-            tipo.innerHTML = `<p>TIPO: ${(type.type.name).toUpperCase()}</p>`
+            tipo.innerHTML = `<p class="type-filter">TIPO: ${(type.type.name).toUpperCase()}</p>`
             div.appendChild(tipo);
         }
     }
@@ -78,7 +81,7 @@ const filterPokemon = (allPokemons) => {
 }
 
 
-const filterTypePokeom = () => {
+const createButton = () => {
     const type = document.querySelector(".container-types");
     for (const tipoPokemon of tiposPokemon) {
         const tipos = document.createElement("div");
@@ -88,3 +91,21 @@ const filterTypePokeom = () => {
         type.appendChild(tipos);
     }
 }
+
+const filterByType = (allPokemons) => {
+    const myBtn = document.querySelector(".bug-type");// esto se podrá insertar por parámetro para que me coja cada clase cuando le de a click
+    const container = document.querySelector(".card-container");// selecionamos la caja donde vamos a querer pintar los pokemons filtrados y para también borrar lo que hay antes
+    myBtn.addEventListener("click", () => { // añadimos escuchador de eventos para que cuando haga click, primero borre el contenido del contenedor y segundo se muestre por pantalla la carta
+        container.innerHTML = "";
+        for (const pokemon of allPokemons) {
+            for (const type of pokemon.types) {
+                //console.log(type.type.name)
+                if (type.type.name === "bug") {
+                const tipo = document.createElement("div");
+                tipo.innerHTML = ProjectCard(pokemon);
+                container.appendChild(tipo);
+                }
+            }
+        }
+    })
+}                     
