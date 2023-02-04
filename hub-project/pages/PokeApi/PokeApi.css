@@ -121,19 +121,29 @@
     align-items: center;
     gap:1rem;
     margin-top: 1rem;
+    width: 80vw;
     
 }
-
+.container-types > div {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .container-types > div > button {
-    width: 50px;
-    height: 50px;
-    
+    width: 70px;
+    height: 70px;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
 }
 
 .container-types > div > button > img {
     width: 50px;
     height: 50px;
+    display: flex;
 }
 
 @media screen and (max-width: 1200px) {
