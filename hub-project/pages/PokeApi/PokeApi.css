@@ -133,17 +133,24 @@
 .container-types > div > button {
     width: 70px;
     height: 70px;
-    border: none;
     justify-content: center;
     align-items: center;
     display: flex;
-   
+    border-radius: 100%;
+    transition: all 1s ease-in-out;
+    border-style: none;
+
+}
+
+.container-types > div > button:hover {
+    box-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
 }
 
 .container-types > div > button > img {
     width: 50px;
     height: 50px;
     display: flex;
+    
 }
 
 @media screen and (max-width: 1200px) {
