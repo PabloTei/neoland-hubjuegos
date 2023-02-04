@@ -1,6 +1,5 @@
 import "./PokeApi.css";
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard";
-//import { tiposPokemon } from "../../data/tipos";
 import { tiposPokemonObject } from "../../data/tipos";
 
 const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/"
@@ -39,7 +38,6 @@ export const PokeApi = async () => {
     cardPokemon(allPokemons);
     filterPokemon(allPokemons);
     createButton();
-    //filterByType(allPokemons);
     ultimateFunction(allPokemons);
     
 }
