@@ -11,7 +11,6 @@
     display: flex;
     width: 100px;
     height: 100px;
-    border: 3px solid black;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -21,21 +20,23 @@
     display: flex;
     width: 100px;
     height: 100px;
-    border: 3px solid black;
     justify-content: center;
     align-items: center;
 }
 
 .jugador-uno {
     text-align: center;
+    margin-top: 7rem;
 }
 
 .jugador-dos {
     text-align: center;
+    margin-top: 7rem;
 }
 
 h3 {
     margin-bottom: 1rem;
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
 }
 
 .boton-resultado {
@@ -46,20 +47,59 @@ h3 {
     flex-direction: column-reverse;
     position: fixed;
     margin-bottom: 20rem;
+    margin-top: 10rem;
 }   
 
-.prueba2 {
+.prueba2 > img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
+    filter: opacity(60%);
+    
+}
+
+.prueba1 > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    filter: opacity(60%);
 }
 
 .prueba1 {
     display: flex;
     justify-content: center;
+}
+
+.prueba2 {
+    display: flex;
+    justify-content: center;
+}
+
+.roll > img {
+    margin-bottom: 1rem;
+    width: 100px;
+    height: 100px;
+    border-style: none;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 20%;
+    filter: opacity(50%);
+}
+
+.resultado {
+    text-shadow: #FFFCA8 2px 2px 0px, #9C9C9C 4px 4px 0px, 2px 2px 2px rgba(0,0,0,0);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.roll {
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

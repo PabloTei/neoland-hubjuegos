@@ -19,7 +19,7 @@ export const RollDice = () => {
     </div>
     <div class="boton-resultado">
     <p class="resultado"></p>
-    <button class="roll">¡ROLL DICE!</button>
+    <button class="roll"><img src="https://res.cloudinary.com/depifliz3/image/upload/v1675559330/samples/Dice/dice_gqa8u9.png"></button>
     </div>
     </div>
     `
@@ -34,41 +34,72 @@ const getRandomNumber = () => {
     const dadoMaquina = document.querySelector(".prueba2");
     const resultado = document.querySelector(".resultado");
 
-    for (let i = 1; i <= jugador; i++) {
         switch (jugador) {
             case 1:
                 dadoUser.innerHTML = `
-                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554326/samples/Dice/dado_xdlpnk.png>"
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554326/samples/Dice/dado_xdlpnk.png"/>
             `
+            break;
             case 2:
                 dadoUser.innerHTML = `
-                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554304/samples/Dice/dado_1_y0pbil.png>"
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554304/samples/Dice/dado_1_y0pbil.png"/>
             `
+            break;
             case 3:
                 dadoUser.innerHTML = `
-                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554307/samples/Dice/dado_2_yfstoy.png>"
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554307/samples/Dice/dado_2_yfstoy.png"/>
             `
+            break;
             case 4:
                 dadoUser.innerHTML = `
-                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554309/samples/Dice/dado_3_tqzvmm.png>"
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554309/samples/Dice/dado_3_tqzvmm.png"/>
             `
+            break;
             case 5:
                 dadoUser.innerHTML = `
-                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554311/samples/Dice/dado_4_hrt96s.png>"
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554311/samples/Dice/dado_4_hrt96s.png"/>
             `
+            break;
             case 6:
                 dadoUser.innerHTML = `
-                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554314/samples/Dice/dado_5_zlxhwj.png>"
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554314/samples/Dice/dado_5_zlxhwj.png"/>
             `
+            break;
         }
-    }
 
-    dadoUser.innerHTML = `
-    ${jugador}
-    `
-    dadoMaquina.innerHTML = `
-    ${maquina}
-    `
+        switch (maquina) {
+            case 1:
+                dadoMaquina.innerHTML = `
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554326/samples/Dice/dado_xdlpnk.png"/>
+            `
+            break;
+            case 2:
+                dadoMaquina.innerHTML = `
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554304/samples/Dice/dado_1_y0pbil.png"/>
+            `
+            break;
+            case 3:
+                dadoMaquina.innerHTML = `
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554307/samples/Dice/dado_2_yfstoy.png"/>
+            `
+            break;
+            case 4:
+                dadoMaquina.innerHTML = `
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554309/samples/Dice/dado_3_tqzvmm.png"/>
+            `
+            break;
+            case 5:
+                dadoMaquina.innerHTML = `
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554311/samples/Dice/dado_4_hrt96s.png"/>
+            `
+            break;
+            case 6:
+                dadoMaquina.innerHTML = `
+                <img src="https://res.cloudinary.com/depifliz3/image/upload/v1675554314/samples/Dice/dado_5_zlxhwj.png"/>
+            `
+            break;
+        }
+
     if (jugador > maquina) {
         resultado.innerHTML = `
         ${localStorage.getItem("user").toUpperCase()}, has ganado.
