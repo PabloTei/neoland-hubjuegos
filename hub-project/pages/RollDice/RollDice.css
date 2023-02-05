@@ -87,7 +87,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    filter: opacity(50%);
+    filter: opacity(40%);
 }
 
 .resultado {
@@ -102,4 +102,9 @@ h3 {
     justify-content: center;
     align-items: center;
 
+}
+
+.roll > img:hover {
+    filter: none;
+    transition: all 1s ease-in-out;
 }
