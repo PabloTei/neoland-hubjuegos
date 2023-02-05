@@ -100,14 +100,17 @@ const getRandomNumber = () => {
             break;
         }
 
+    
     if (jugador > maquina) {
         resultado.innerHTML = `
         ${localStorage.getItem("user").toUpperCase()}, has ganado.
         `
+
     } else if (jugador < maquina) {
         resultado.innerHTML = `
         ${localStorage.getItem("user").toUpperCase()}, has perdido.
         `
+
     } else {
         resultado.innerHTML = `
         ${localStorage.getItem("user").toUpperCase()}, has empatado.

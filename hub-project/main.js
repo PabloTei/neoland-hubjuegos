@@ -6,6 +6,7 @@ import { Hub } from './pages/Hub/Hub';
 import { PokeApi } from './pages/PokeApi/PokeApi';
 import { Footer } from './components/Footer/Footer';
 import { RollDice } from './pages/RollDice/RollDice';
+import { PiedraPapelTijera } from './pages/PiedraPapelTijera/PiedraPapelTijera';
 
 
 export const initContent = (route) => {
@@ -21,6 +22,10 @@ export const initContent = (route) => {
             break;
         case "RollDice":
             RollDice()
+            break;
+        case "PiedraPapelTijera":
+            PiedraPapelTijera();
+            break;
     }
 }
 

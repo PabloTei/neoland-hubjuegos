@@ -1,4 +1,5 @@
 export const games = [
     "PokeApi",
-    "RollDice"
+    "RollDice",
+    "PiedraPapelTijera"
 ];

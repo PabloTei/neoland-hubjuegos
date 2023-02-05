@@ -17,6 +17,7 @@ export const Hub = () => {
     hubGames();
     route();
     routeRollDice();
+    routePpt();
 }
 
 
@@ -40,5 +41,12 @@ const routeRollDice = () => {
     const routeRollDice = document.querySelector(".ROLLDICE-NAME");
     routeRollDice.addEventListener("click", () => {
         initContent("RollDice");
+    })
+}
+
+const routePpt = () => {
+    const routePpt = document.querySelector(".PIEDRAPAPELTIJERA-NAME");
+    routePpt.addEventListener("click", () => {
+        initContent("PiedraPapelTijera");
     })
 }
