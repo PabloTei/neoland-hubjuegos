@@ -40,10 +40,26 @@ h3 {
 
 .boton-resultado {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items:center;
-    height: 80vh;
-    flex-direction: column;
+    height: 7vh;
+    flex-direction: column-reverse;
     position: fixed;
     margin-bottom: 20rem;
 }   
+
+.prueba2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
+
+.prueba1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+}
